@@ -1,0 +1,10 @@
+[
+  {
+    "radio_id": 1,
+    "radio_name": "Radyo Mevlana",
+    "country": "Türkiye",
+    "city": "İstanbul",
+    "radio_type": "FM",
+    "streaming_url": "http://185.136.204.200:8166/"
+  }
+]

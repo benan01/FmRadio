@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/ic_background"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".activity.MainActivity"
+    tools:showIn="@layout/activity_main">
+
+    <com.google.android.gms.ads.AdView
+        android:id="@+id/adView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentTop="true"
+        app:adSize="BANNER"
+        app:adUnitId="@string/banner_ad_unit_id"/>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+
+    <ImageButton
+        android:id="@+id/leftArrowButton"
+        android:layout_width="@dimen/size_50"
+        android:layout_height="@dimen/size_50"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="@dimen/margin_5"
+        android:adjustViewBounds="true"
+        android:background="?selectableItemBackgroundBorderless"
+        android:scaleType="centerInside"
+        android:src="@drawable/ic_arrow_left"
+        android:visibility="gone" />
+
+    <ImageButton
+        android:id="@+id/rightArrowButton"
+        android:layout_width="@dimen/size_50"
+        android:layout_height="@dimen/size_50"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="@dimen/margin_5"
+        android:adjustViewBounds="true"
+        android:background="?selectableItemBackgroundBorderless"
+        android:scaleType="centerInside"
+        android:src="@drawable/ic_arrow_right"
+        android:visibility="gone" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="60dp"
+        android:gravity="center_horizontal">
+
+        <ImageButton
+            android:id="@+id/imageButton4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_toEndOf="@+id/imageButton2"
+            android:layout_toRightOf="@+id/imageButton2"
+            android:background="@color/bgCardColor"
+            app:srcCompat="@drawable/button_email2" />
+
+        <ImageButton
+            android:id="@+id/imageButton3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:background="@color/bgCardColor"
+            app:srcCompat="@drawable/instagram" />
+
+        <ImageButton
+            android:id="@+id/imageButton2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_toEndOf="@+id/imageButton3"
+            android:layout_toRightOf="@+id/imageButton3"
+            android:background="@color/bgCardColor"
+            app:srcCompat="@drawable/twit" />
+    </RelativeLayout>
+
+    <com.facebook.shimmer.ShimmerFrameLayout
+        android:id="@+id/shimmer_view_container"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="@dimen/margin_16"
+        android:layout_marginLeft="@dimen/margin_20"
+        android:layout_marginRight="@dimen/margin_22"
+        app:duration="1000">
+
+        <RelativeLayout
+            android:id="@+id/relativeLayout"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/size_56"
+            android:background="@drawable/shape_boarder_bg">
+
+            <ImageView
+                android:id="@+id/playStatus"
+                android:layout_width="@dimen/size_40"
+                android:layout_height="@dimen/size_40"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/margin_10"
+                android:padding="@dimen/padding_4"
+                android:src="@drawable/ic_radio_gray" />
+
+            <TextView
+                android:id="@+id/playingNow"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/margin_5"
+                android:layout_marginRight="@dimen/margin_50"
+                android:layout_toRightOf="@+id/playStatus"
+                android:ellipsize="marquee"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:marqueeRepeatLimit="marquee_forever"
+                android:scrollHorizontally="true"
+                android:singleLine="true"
+                android:text="@string/not_playing"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_18" />
+
+        </RelativeLayout>
+
+    </com.facebook.shimmer.ShimmerFrameLayout>
+
+
+    <LinearLayout
+        android:id="@+id/loading_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:visibility="gone">
+
+        <ProgressBar
+            android:id="@+id/progressBar"
+            style="?android:attr/progressBarStyleLarge"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal" />
+
+    </LinearLayout>
+
+</RelativeLayout>

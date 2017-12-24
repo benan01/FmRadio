@@ -1,0 +1,49 @@
+<resources>
+
+    <!-- I have used google translator, if you feel any
+    item is inconsistent please edit that as your expectation
+
+    Set up your own local:
+    https://developer.android.com/training/basics/supporting-devices/languages.html
+    http://stackoverflow.com/a/7989085
+    -->
+
+    <string name="app_name">Online FM Radio</string>
+
+    <string name="action_list">Radio Seznam</string>
+    <string name="action_share">Share</string>
+    <string name="action_record">Záznam</string>
+    <string name="action_rate">Rate</string>
+
+    <string name="not_playing">Nehraje nyní</string>
+    <string name="now_playing">Nyní hraje: </string>
+
+    <string name="placeholder">...</string>
+
+    <string name="connect">Připojit</string>
+    <string name="no_internet">Žádné připojení k internetu</string>
+
+    <string name="all_radio">All Radio</string>
+
+    <string name="radio_name">název Radio</string>
+    <string name="radio_url">Radio streaming url</string>
+
+    <string name="permission_denied">Permission denied , nahrávání se nezdařilo!</string>
+
+    <string name="recording">Záznam</string>
+    <string name="placeholder_time">00:00:00</string>
+    <string name="hint_file_name">Název souboru</string>
+
+    <string name="save_recording">Uložení záznamu ?</string>
+    <string name="save">Uložit</string>
+    <string name="discard">Vyřadit</string>
+
+    <string name="error_record">Chyba nahrávání !</string>
+    <string name="share_using">Share using</string>
+    <string name="share_text">Download</string>
+    <string name="share_text1">Listening radio: </string>
+    <string name="share_text2">on</string>
+    <string name="share_text3">Download this app from here:</string>
+
+
+</resources>

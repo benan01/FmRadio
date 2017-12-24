@@ -1,0 +1,49 @@
+<resources>
+
+    <!-- I have used google translator, if you feel any
+    item is inconsistent please edit that as your expectation
+
+    Set up your own local:
+    https://developer.android.com/training/basics/supporting-devices/languages.html
+    http://stackoverflow.com/a/7989085
+    -->
+
+    <string name="app_name">Online FM Radio</string>
+
+    <string name="action_list">রেডিও তালিকা</string>
+    <string name="action_share">Share</string>
+    <string name="action_record">রেকর্ড</string>
+    <string name="action_rate">Rate</string>
+
+    <string name="not_playing">কোন রেডিও চালু নেই</string>
+    <string name="now_playing">এখন চলছে: </string>
+
+    <string name="placeholder">...</string>
+
+    <string name="connect">সংযোগ দিন</string>
+    <string name="no_internet">কোন ইন্টারনেট সংযোগ নেই</string>
+
+    <string name="all_radio">সকল রেডিও</string>
+
+    <string name="radio_name">রেডিওর নাম</string>
+    <string name="radio_url">রেডিও স্ট্রিমিং URL</string>
+
+    <string name="permission_denied">অনুমতি দেওয়া হয় নি , রেকর্ডিং ব্যর্থ হয়েছে!</string>
+
+    <string name="recording">রেকর্ডিং</string>
+    <string name="placeholder_time">00:00:00</string>
+    <string name="hint_file_name">ফাইলের নাম</string>
+
+    <string name="save_recording">রেকর্ডিং সংরক্ষণ করবেন?</string>
+    <string name="save">সংরক্ষণ করুন</string>
+    <string name="discard">বাতিল করুন</string>
+
+    <string name="error_record">রেকর্ডিং ব্যার্থ হয়েছে!</string>
+    <string name="share_using">Share using</string>
+    <string name="share_text">Download</string>
+    <string name="share_text1">Listening radio: </string>
+    <string name="share_text2">on</string>
+    <string name="share_text3">Download this app from here:</string>
+
+
+</resources>

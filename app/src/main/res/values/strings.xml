@@ -1,0 +1,48 @@
+<resources>
+
+
+    <!--  place your ad id's here -->
+    <string name="app_ad_id" translatable="false">ca-app-pub-4593227847474433~1285209906</string>
+    <string name="banner_ad_unit_id" translatable="false">ca-app-pub-9692226405098722/6898602897</string>
+    <string name="interstitial_ad_unit_id" translatable="false">ca-app-pub-9692226405098722/2328802492</string>
+
+
+    <string name="app_name">Online FM Radio</string>
+
+    <string name="action_list">Radio List</string>
+    <string name="action_share">Share</string>
+    <string name="action_record">Record</string>
+    <string name="action_rate">Rate</string>
+
+    <string name="not_playing">Not playing now</string>
+    <string name="now_playing">Now playing: </string>
+
+    <string name="placeholder">...</string>
+
+    <string name="connect">Connect</string>
+    <string name="no_internet">No internet connection</string>
+
+    <string name="all_radio">All Radio</string>
+
+    <string name="radio_name">Radio name</string>
+    <string name="radio_url">Radio streaming url</string>
+
+    <string name="permission_denied">Permission denied, recording failed!</string>
+
+    <string name="recording">Recording</string>
+    <string name="placeholder_time">00:00:00</string>
+    <string name="hint_file_name">File name</string>
+
+    <string name="save_recording">Save recording?</string>
+    <string name="save">Save</string>
+    <string name="discard">Discard</string>
+
+    <string name="error_record">Recording error!</string>
+    <string name="share_using">Share using</string>
+    <string name="share_text">Download</string>
+    <string name="share_text1">Listening radio: </string>
+    <string name="share_text2">on</string>
+    <string name="share_text3">Download this app from here:</string>
+
+
+</resources>

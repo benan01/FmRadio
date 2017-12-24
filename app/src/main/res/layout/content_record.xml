@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bgRecord"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".activity.RecordActivity"
+    tools:showIn="@layout/activity_record">
+
+    <TextView
+        android:id="@+id/recordingText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="150dp"
+        android:text="@string/recording"
+        android:textColor="@color/white" />
+
+    <com.facebook.shimmer.ShimmerFrameLayout
+        android:id="@+id/shimmer_view_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/recordingText"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="@dimen/margin_20"
+        android:layout_marginRight="@dimen/margin_20"
+        android:layout_marginTop="@dimen/margin_16"
+        app:duration="1000">
+
+        <TextView
+            android:id="@+id/radioName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:singleLine="true"
+            android:text="@string/recording"
+            android:textColor="@color/white"
+            android:textSize="45sp" />
+
+    </com.facebook.shimmer.ShimmerFrameLayout>
+
+    <TextView
+        android:id="@+id/countUpTimer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/shimmer_view_container"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/margin_10"
+        android:ellipsize="end"
+        android:gravity="center"
+        android:singleLine="true"
+        android:text="@string/placeholder_time"
+        android:textColor="@color/white"
+        android:textSize="22sp" />
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/stopButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/countUpTimer"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/margin_20"
+        android:clickable="true"
+        android:src="@drawable/ic_stop"
+        app:backgroundTint="@color/white"
+        app:borderWidth="0dp"
+        app:elevation="8dp"
+        app:fabSize="normal"
+        app:layout_anchor="@id/recordingText"
+        app:pressedTranslationZ="12dp"
+        app:rippleColor="@color/transparentBlack" />
+
+    <com.google.android.gms.ads.AdView
+        android:id="@+id/adView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        app:adSize="BANNER"
+        app:adUnitId="@string/banner_ad_unit_id"/>
+
+</RelativeLayout>
